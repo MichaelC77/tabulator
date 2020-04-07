@@ -32,6 +32,10 @@ History.prototype.getHistoryRedoSize = function(){
 	return this.history.length - (this.index + 1);
 };
 
+History.prototype.getHistory = function () {
+        return this.history;
+};
+
 History.prototype.undo = function(){
 
 	if(this.index > -1){
